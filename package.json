@@ -2,7 +2,7 @@
   "name": "model",
   "version": "1.0.0",
   "description": "javascript model 合集",
-  "main": "index.js",
+  "main": "lib/model.umd.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build" : "webpack"
