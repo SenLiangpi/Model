@@ -1,6 +1,6 @@
 {
   "name": "model",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "javascript model 合集",
   "main": "lib/model.umd.min.js",
   "scripts": {
