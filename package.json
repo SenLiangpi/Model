@@ -1,6 +1,6 @@
 {
-  "name": "model",
-  "version": "0.0.1",
+  "name": "alml",
+  "version": "0.0.2",
   "description": "javascript model 合集",
   "main": "lib/model.umd.min.js",
   "scripts": {
