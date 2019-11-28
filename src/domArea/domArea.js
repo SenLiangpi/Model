@@ -1,6 +1,5 @@
 let domArea = function () {
   this.height = window.screen.availHeight;
-
 }
 domArea.prototype.binding = function (className, Inside, outer) {
   let dom = document.getElementsByClassName(className),height = window.screen.availHeight;
