@@ -4,11 +4,11 @@
  * @Github: https://github.com/SenLiangpi
  * @Website: https://senliangpi.github.io/blog/#/
  * @Date: 2019-11-13 15:14:38
- * @LastEditors: PiPi
- * @LastEditTime: 2019-12-04 09:27:51
+ * @LastEditors  : PiPi
+ * @LastEditTime : 2019-12-23 13:44:27
  */
 
-//原始代码
+//0.1 版本
 // export let sketchpad = {};
 // let sketchpadDom , sketchpadIf = false
 // sketchpad.sketchpad = (dom) => {
@@ -113,7 +113,7 @@
 //   return sketchpadIf
 // }
 
-// 改造后的代码
+// 0.1.1 版本 优化了代码封装，事件拦截修改
 export class sketchpad {
   sketchpad(json) {
     this.sketchpadDom = json.id
