@@ -1,3 +1,13 @@
+/*
+ * @Author: PiPi
+ * @Email: pisenliang@gmail.com
+ * @Github: https://github.com/SenLiangpi
+ * @Website: https://senliangpi.github.io/blog/#/
+ * @Date: 2019-06-28 11:53:12
+ * @LastEditors: PiPi
+ * @LastEditTime: 2020-05-12 09:42:55
+ */
+//当前dom 是否在可视区域
 let domArea = function () {
   this.height = window.screen.availHeight;
 }

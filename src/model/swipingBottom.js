@@ -5,8 +5,10 @@
  * @Website: https://senliangpi.github.io/blog/#/
  * @Date: 2019-11-25 17:57:37
  * @LastEditors: PiPi
- * @LastEditTime: 2019-12-04 10:11:30
+ * @LastEditTime: 2020-05-12 09:47:48
  */
+//下拉刷新
+
 //顶部向上的移动距离
 function getDocumentTop() {
   let scrollTop = 0, bodyScrollTop = 0, documentScrollTop = 0

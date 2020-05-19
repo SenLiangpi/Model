@@ -5,8 +5,9 @@
  * @Website: https://senliangpi.github.io/blog/#/
  * @Date: 2019-11-26 15:00:05
  * @LastEditors: PiPi
- * @LastEditTime: 2019-11-27 16:03:35
+ * @LastEditTime: 2020-05-12 09:44:13
  */
+// XML HTTP 请求
 export const http = (data)=>{
   return new Promise((resolve, reject) => {
     let xmlhttp

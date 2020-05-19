@@ -7,6 +7,7 @@
  * @LastEditors: PiPi
  * @LastEditTime: 2019-11-27 15:36:22
  */
+//获取当前设备
 export function equipmentJudgment(){
   let userAgentInfo = navigator.userAgent, //获取 设备信息
   agent = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"], //移动端设备列表

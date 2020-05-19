@@ -1,5 +1,13 @@
+/*
+ * @Author: PiPi
+ * @Email: pisenliang@gmail.com
+ * @Github: https://github.com/SenLiangpi
+ * @Website: https://senliangpi.github.io/blog/#/
+ * @Date: 2019-06-25 14:10:38
+ * @LastEditors: PiPi
+ * @LastEditTime: 2020-05-12 09:57:39
+ */
 import domArea from './domArea/domArea';
-let data = new Object
-data.domArea = domArea
+import { commaSeparated } from './model/number'
 
-export default data
+export { domArea,commaSeparated }
