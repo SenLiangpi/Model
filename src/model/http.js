@@ -5,10 +5,10 @@
  * @Website: https://senliangpi.github.io/blog/#/
  * @Date: 2019-11-26 15:00:05
  * @LastEditors: PiPi
- * @LastEditTime: 2020-05-12 09:44:13
+ * @LastEditTime: 2020-05-19 14:51:12
  */
 // XML HTTP 请求
-export const http = (data)=>{
+export function http(data){
   return new Promise((resolve, reject) => {
     let xmlhttp
     // 新建 XML HTTP 请求
