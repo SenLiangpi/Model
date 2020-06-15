@@ -5,7 +5,7 @@
  * @Website: https://senliangpi.github.io/blog/#/
  * @Date: 2020-05-14 16:12:46
  * @LastEditors: PiPi
- * @LastEditTime: 2020-05-20 09:15:44
+ * @LastEditTime: 2020-05-20 09:25:56
  */
 /**
  * @description: search1 数组a 中所有的数据是否在数组 b中都存在
@@ -28,7 +28,6 @@ export function ArrDelete(a,b){
   else
    return a.splice(a.findIndex(item => item == b), 1)
 }
-
 /**
  * @description: Collocate 并归排序
  * @param {type} 
