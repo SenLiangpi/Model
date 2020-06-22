@@ -5,16 +5,22 @@
  * @Website: https://senliangpi.github.io/blog/#/
  * @Date: 2020-05-14 16:12:46
  * @LastEditors: PiPi
- * @LastEditTime: 2020-05-20 09:25:56
+ * @LastEditTime: 2020-06-22 16:28:07
  */
 /**
  * @description: search1 数组a 中所有的数据是否在数组 b中都存在
  * @param { a: { type: Array }, b: { type: Array } }
  * @return: b数组包含a数组所有数据 返回 true 否则 false
  */
-export function search1 (a,b){
+export function search (a,b){
   for(let o in a)
     if(b.indexOf(a[o])==-1) return false
+  return true
+}
+export function search1 (a,b){
+  const VALID_VALUE = new Set(b)
+  for(let o in a)
+    if(VALID_VALUE.has(a[o])==false) return false
   return true
 }
 /**
@@ -59,4 +65,10 @@ function merge(left, right) {
       result.push(right.shift());
 
   return result;
+}
+
+function arrayIndex(arr,value){
+  arr.includes(value)
+  const VALID_VALUE = new Set(arr)
+  VALID_VALUE.has(value)
 }
