@@ -5,7 +5,7 @@
  * @Website: https://senliangpi.github.io/blog/#/
  * @Date: 2020-05-14 16:12:46
  * @LastEditors: PiPi
- * @LastEditTime: 2020-06-22 16:28:07
+ * @LastEditTime: 2020-06-22 17:18:51
  */
 /**
  * @description: search1 数组a 中所有的数据是否在数组 b中都存在
@@ -66,7 +66,25 @@ function merge(left, right) {
 
   return result;
 }
-
+/**
+ * @description: sort 插入排序
+ * @param {type} 
+ * @return: 
+ */
+export function sort(arry) {
+  let key, i;
+  for (let j = 1; j < arry.length; j++) {
+      key = arry[j];
+      i = j - 1;
+      while (i > -1 && arry[i] > key) {
+          arry[i + 1] = arry[i];
+          i --;
+      }
+      arry[i + 1] = key;
+  }
+  //输出结果
+  return arry;
+}
 function arrayIndex(arr,value){
   arr.includes(value)
   const VALID_VALUE = new Set(arr)
