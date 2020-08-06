@@ -4,8 +4,8 @@
  * @Github: https://github.com/SenLiangpi
  * @Website: https://senliangpi.github.io/blog/#/
  * @Date: 2019-11-13 15:14:38
- * @LastEditors  : PiPi
- * @LastEditTime : 2019-12-23 13:44:27
+ * @LastEditors: PiPi
+ * @LastEditTime: 2020-08-05 10:33:34
  */
 
 //0.1 版本
@@ -114,6 +114,11 @@
 // }
 
 // 0.1.1 版本 优化了代码封装，事件拦截修改
+/**
+ * @description: sketchpad 简易画布涂鸦功能
+ * @param {type} 
+ * @return {type} 
+ */
 export class sketchpad {
   sketchpad(json) {
     this.sketchpadDom = json.id

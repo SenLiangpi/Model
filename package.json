@@ -1,6 +1,6 @@
 {
   "name": "alml",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "description": "javascript model 合集",
   "main": "lib/model.umd.min.js",
   "scripts": {
@@ -14,7 +14,7 @@
   "keywords": [
     "javascript"
   ],
-  "author": "pipi",
+  "author": "pisenliang <pisenliang@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/SenLiangpi/Model/issues"

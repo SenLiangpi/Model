@@ -5,7 +5,7 @@
  * @Website: https://senliangpi.github.io/blog/#/
  * @Date: 2020-05-14 16:12:46
  * @LastEditors: PiPi
- * @LastEditTime: 2020-06-22 17:18:51
+ * @LastEditTime: 2020-08-05 10:27:41
  */
 /**
  * @description: search1 数组a 中所有的数据是否在数组 b中都存在
@@ -17,6 +17,7 @@ export function search (a,b){
     if(b.indexOf(a[o])==-1) return false
   return true
 }
+//升级版
 export function search1 (a,b){
   const VALID_VALUE = new Set(b)
   for(let o in a)

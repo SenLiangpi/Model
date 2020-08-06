@@ -5,11 +5,11 @@
  * @Website: https://senliangpi.github.io/blog/#/
  * @Date: 2019-12-04 09:19:13
  * @LastEditors: PiPi
- * @LastEditTime: 2019-12-04 09:22:42
+ * @LastEditTime: 2020-08-05 10:31:53
  */
 
-// 获取选中文件 生产链接地址
-function getObjectURL (file) {
+// 选中文件 生成链接地址
+export function getObjectURL (file) {
   let url = null
   if (window.createObjcectURL != undefined) {
     url = window.createOjcectURL(file)
