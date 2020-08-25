@@ -5,7 +5,7 @@
  * @Website: https://senliangpi.github.io/blog/#/
  * @Date: 2020-08-05 10:50:31
  * @LastEditors: Pi Patle
- * @LastEditTime: 2020-08-24 14:01:17
+ * @LastEditTime: 2020-08-24 14:14:49
  */
 import { getObjectURL } from './getObjectURL.js'
 import { getBlobBydataURI } from './blobBase64.js'
@@ -38,7 +38,7 @@ export function pictureCompression(file,cropSize){
           ctx.width = canvasDom.width;
           ctx.height = canvasDom.height;
           ctx.drawImage(this, 0, 0, ctx.width, ctx.height);
-          const imgcompression = getBlobBydataURI(canvasDom.toDataURL("image/jpeg",0.9),"image/jpeg",'pipi')
+          const imgcompression = getBlobBydataURI(canvasDom.toDataURL("image/jpeg",0.9),"image/jpeg",'pipi.jpg');
           resolve(imgcompression)
         }
       }else{

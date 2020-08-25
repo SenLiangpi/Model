@@ -4,8 +4,8 @@
  * @Github: https://github.com/SenLiangpi
  * @Website: https://senliangpi.github.io/blog/#/
  * @Date: 2019-06-25 14:10:38
- * @LastEditors: PiPi
- * @LastEditTime: 2020-08-05 14:25:48
+ * @LastEditors: Pi Patle
+ * @LastEditTime: 2020-08-24 14:04:27
  */
 import domArea from './domArea/domArea';
 import { commaSeparated } from './model/number'
@@ -19,7 +19,7 @@ import { recursion } from './model/recursion.js'
 import { sketchpad } from './model/sketchpad.js'
 import { swipingBottom } from './model/swipingBottom.js'
 import { pictureCompression } from './model/pictureCompression.js'
-import { recording } from './model/recording.js'
+// import { recording } from './model/recording.js'
 export { 
   domArea,
   commaSeparated,
@@ -38,5 +38,5 @@ export {
   sketchpad,
   swipingBottom,
   pictureCompression,
-  recording
+  // recording
 }
