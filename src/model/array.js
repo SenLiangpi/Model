@@ -4,8 +4,8 @@
  * @Github: https://github.com/SenLiangpi
  * @Website: https://senliangpi.github.io/blog/#/
  * @Date: 2020-05-14 16:12:46
- * @LastEditors: PiPi
- * @LastEditTime: 2020-08-05 10:27:41
+ * @LastEditors: Pi Patle
+ * @LastEditTime: 2020-09-01 16:06:07
  */
 /**
  * @description: search1 数组a 中所有的数据是否在数组 b中都存在
@@ -86,6 +86,26 @@ export function sort(arry) {
   //输出结果
   return arry;
 }
+/**
+ * @description: arrayMonitor 数组监听
+ * @param {type} 
+ * @return: 
+ */
+export function arrayMonitor(callback){
+  const arrExtend = Object.create(Array.prototype)
+  const arrMethods = ['push','pop','shift','unshift','splice','sort','reverse']
+  // arrExtend 作为一个拦截对象, 对其中的方法进行重写
+  arrMethods.forEach(method => {
+    const oldMethod = Array.prototype[method]
+    const newMethod = function(...args) {
+      oldMethod.apply(this, args)
+      callback(method)
+    }
+    arrExtend[method] = newMethod
+  })
+  return arrExtend
+}
+
 function arrayIndex(arr,value){
   arr.includes(value)
   const VALID_VALUE = new Set(arr)

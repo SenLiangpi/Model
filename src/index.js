@@ -5,11 +5,11 @@
  * @Website: https://senliangpi.github.io/blog/#/
  * @Date: 2019-06-25 14:10:38
  * @LastEditors: Pi Patle
- * @LastEditTime: 2020-08-24 14:04:27
+ * @LastEditTime: 2020-09-01 16:06:29
  */
 import domArea from './domArea/domArea';
 import { commaSeparated } from './model/number'
-import { search,search1,ArrDelete,Collocate,sort } from './model/array.js'
+import { search,search1,ArrDelete,Collocate,sort,arrayMonitor } from './model/array.js'
 import { getBlobBydataURI } from './model/blobBase64.js'
 import { dateWeek,dateMonth } from './model/date.js'
 import { equipmentJudgment } from './model/equipmentJudgment.js'
@@ -38,5 +38,6 @@ export {
   sketchpad,
   swipingBottom,
   pictureCompression,
+  arrayMonitor,
   // recording
 }
