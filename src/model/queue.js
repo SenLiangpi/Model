@@ -5,7 +5,7 @@
  * @Website: https://senliangpi.github.io/blog/#/
  * @Date: 2020-09-01 10:43:53
  * @LastEditors: Pi Patle
- * @LastEditTime: 2020-09-10 10:48:21
+ * @LastEditTime: 2020-09-14 11:34:48
  */
 export class queue {
   constructor(){
@@ -32,5 +32,37 @@ export class queue {
   get_queue(){//队列 数据
     const queue = this.queue
     return queue
+  }
+}
+//队列基本
+export class queue_basis {
+  constructor(){
+    const queue = new queue();
+    this.dequeueType = true;
+    this.lock = true;
+  }
+  enqueue(data){
+    queue.enqueue_after(data);
+    if(this.lock){
+      this.dequeue();
+    }
+  }
+  dequeue(callback){
+    let recursion = ()=>{
+      if(queue.data_type() && this.lock){
+        let data = queue.dequeue_before();
+        callback(data);
+        recursion();
+      }else{
+        this.dequeueType = true;
+      }
+    }
+    if(this.dequeueType && this.lock){
+      this.dequeueType = false;
+      recursion();
+    }
+  }
+  controller(parameter){
+    this.lock = parameter;
   }
 }
