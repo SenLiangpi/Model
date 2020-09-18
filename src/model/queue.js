@@ -5,7 +5,7 @@
  * @Website: https://senliangpi.github.io/blog/#/
  * @Date: 2020-09-01 10:43:53
  * @LastEditors: Pi Patle
- * @LastEditTime: 2020-09-14 11:34:48
+ * @LastEditTime: 2020-09-15 09:19:18
  */
 export class queue {
   constructor(){
@@ -14,15 +14,15 @@ export class queue {
   enqueue_before(data){//入队-前
     this.queue.push(data);
   }
-  enqueue_after(){//入队-后
+  enqueue_after(data){//入队-后
     this.queue.unshift(data);
   }
   dequeue_before(){//出队-前
-    const before = this.array.pop();
+    const before = this.queue.pop();
     return before
   }
   dequeue_after(){//出队-后
-    const after = this.array.shift();
+    const after = this.queue.shift();
     return after
   }
   data_type(){//队列 状态 是否有数据在排队
@@ -36,22 +36,31 @@ export class queue {
 }
 //队列基本
 export class queue_basis {
-  constructor(){
-    const queue = new queue();
+  constructor(data){
+    this.queue = new queue();
     this.dequeueType = true;
-    this.lock = true;
+    if(data.lock || data.lock===false){
+      this.lock = data.lock;
+    }else{
+      this.lock = true;
+    }
+    if(data.callback){
+      this.callback = data.callback;
+    }else{
+      this.callback = ()=>{};
+    }
   }
   enqueue(data){
-    queue.enqueue_after(data);
+    this.queue.enqueue_after(data);
     if(this.lock){
       this.dequeue();
     }
   }
-  dequeue(callback){
+  dequeue(){
     let recursion = ()=>{
-      if(queue.data_type() && this.lock){
-        let data = queue.dequeue_before();
-        callback(data);
+      if(this.queue.data_type() && this.lock){
+        let data = this.queue.dequeue_before();
+        this.callback(data);
         recursion();
       }else{
         this.dequeueType = true;
