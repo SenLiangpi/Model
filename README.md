@@ -4,8 +4,8 @@
  * @Github: https://github.com/SenLiangpi
  * @Website: https://senliangpi.github.io/blog/#/
  * @Date: 2019-06-25 14:23:46
- * @LastEditors: PiPi
- * @LastEditTime: 2020-08-05 14:28:57
+ * @LastEditors: Pi Patle
+ * @LastEditTime: 2020-09-14 17:01:31
 -->
 # All model
 JavaScript 逻辑代码封装库
@@ -62,7 +62,13 @@ swipingBottom
 pictureCompression
 图片压缩 0.0.4
 
-recording
+recording //逻辑优化中暂不对外开放
 录音 0.0.5
+
+queue
+队列 0.0.8
+
+queue_basis
+基本队列-应用层面 0.0.8
 ## API
 暂时没时间写(ง •_•)ง 如有想要使用但不懂如何用的 可以联系我
