@@ -5,7 +5,7 @@
  * @Website: https://senliangpi.github.io/blog/#/
  * @Date: 2019-06-25 14:23:46
  * @LastEditors: Pi Patle
- * @LastEditTime: 2020-09-14 17:01:31
+ * @LastEditTime: 2020-11-11 09:54:37
 -->
 # All model
 JavaScript 逻辑代码封装库
@@ -70,5 +70,8 @@ queue
 
 queue_basis
 基本队列-应用层面 0.0.8
+
+queue_basis
+动画 0.0.10
 ## API
 暂时没时间写(ง •_•)ง 如有想要使用但不懂如何用的 可以联系我

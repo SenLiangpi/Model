@@ -4,8 +4,8 @@
  * @Github: https://github.com/SenLiangpi
  * @Website: https://senliangpi.github.io/blog/#/
  * @Date: 2020-08-05 13:49:33
- * @LastEditors: PiPi
- * @LastEditTime: 2020-08-05 14:23:52
+ * @LastEditors: Pi Patle
+ * @LastEditTime: 2020-11-02 09:12:25
  */
 export class recording{
   authorization(){
@@ -21,7 +21,7 @@ export class recording{
           size: 0,//录音文件长度
           buffer: [],//录音缓存
           inputSampleRate: context.sampleRate,//输入采样率
-          inputSampleBits: 8,//输入采样数位 8, 16
+          inputSampleBits: 8,//输入采样数位 8, x
           outputSampleRate: 10250,//输出采样率
           oututSampleBits: 8,//输出采样数位 8, 16
           input: function (data) {

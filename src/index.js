@@ -5,7 +5,7 @@
  * @Website: https://senliangpi.github.io/blog/#/
  * @Date: 2019-06-25 14:10:38
  * @LastEditors: Pi Patle
- * @LastEditTime: 2020-09-14 16:59:07
+ * @LastEditTime: 2020-11-10 11:17:56
  */
 import domArea from './domArea/domArea';
 import { commaSeparated } from './model/number'
@@ -21,6 +21,7 @@ import { swipingBottom } from './model/swipingBottom.js'
 import { pictureCompression } from './model/pictureCompression.js'
 // import { recording } from './model/recording.js'
 import { queue,queue_basis } from './model/queue.js'
+import { ceshi1 } from './model/animation.js'
 export { 
   domArea,
   commaSeparated,
@@ -42,5 +43,6 @@ export {
   arrayMonitor,
   // recording,
   queue,
-  queue_basis
+  queue_basis,
+  ceshi1
 }
