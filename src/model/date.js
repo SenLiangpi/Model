@@ -4,8 +4,8 @@
  * @Github: https://github.com/SenLiangpi
  * @Website: https://senliangpi.github.io/blog/#/
  * @Date: 2020-06-11 09:14:23
- * @LastEditors: PiPi
- * @LastEditTime: 2020-06-15 16:31:31
+ * @LastEditors: Pi Patle
+ * @LastEditTime: 2020-11-25 11:21:22
  */ 
 /**
  * @description: dateWeek  某周的开始结束日期
@@ -13,7 +13,7 @@
  * @return: 
  */
 export function dateWeek(time){
-  if(time){
+  if(!time){
     return
   }
   let week = new Date(time).getUTCDay()
@@ -30,7 +30,7 @@ export function dateWeek(time){
  * @param {type} 
  * @return: 
  */
-export function dateMonth(data){
+export function dateMonth(date){
   let myDate = new Date(date),start,end;
   let getFullYear = new Number(myDate.getFullYear()),getMonth = new Number(myDate.getMonth())+1;
   start = getFullYear+'/'+getMonth+'/01'+' 12:00:00';
