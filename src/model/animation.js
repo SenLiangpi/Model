@@ -5,8 +5,9 @@
  * @Website: https://senliangpi.github.io/blog/#/
  * @Date: 2020-11-10 11:16:38
  * @LastEditors: Pi Patle
- * @LastEditTime: 2020-11-10 11:19:54
+ * @LastEditTime: 2021-02-23 14:08:10
  */
+// 透明度设置
 function domOpacity(dom,opacity,time){
   return new Promise((resolve, reject) => {
     let anim = setInterval(function() {
@@ -20,6 +21,13 @@ function domOpacity(dom,opacity,time){
     }, time);
   })
 }
+/**
+ * @Author: Pi Patle
+ * @description: ceshi1 圆形扩展动画
+ * @param {*} e
+ * @param {*} dome
+ * @return {*}
+ */
 export function ceshi1(e,dome){
   return new Promise((resolve, reject) => {
     let $body = document.getElementsByTagName("body")[0];

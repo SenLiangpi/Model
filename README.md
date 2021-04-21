@@ -5,7 +5,7 @@
  * @Website: https://senliangpi.github.io/blog/#/
  * @Date: 2019-06-25 14:23:46
  * @LastEditors: Pi Patle
- * @LastEditTime: 2020-11-11 09:54:37
+ * @LastEditTime: 2021-04-21 15:52:26
 -->
 # All model
 JavaScript 逻辑代码封装库
@@ -73,5 +73,17 @@ queue_basis
 
 queue_basis
 动画 0.0.10
+
+phone_number
+中国大陆手机号正则 
+
+text_length
+文本长度是否符合
+
+CHN_number_plate
+中国大陆机动车车牌正则校验
+
+text_number
+文本是否都是数字正则校验
 ## API
 暂时没时间写(ง •_•)ง 如有想要使用但不懂如何用的 可以联系我

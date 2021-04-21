@@ -5,7 +5,7 @@
  * @Website: https://senliangpi.github.io/blog/#/
  * @Date: 2020-05-14 16:12:46
  * @LastEditors: Pi Patle
- * @LastEditTime: 2020-09-01 16:06:07
+ * @LastEditTime: 2021-04-21 16:15:22
  */
 /**
  * @description: search1 数组a 中所有的数据是否在数组 b中都存在
@@ -17,7 +17,7 @@ export function search (a,b){
     if(b.indexOf(a[o])==-1) return false
   return true
 }
-//升级版
+//search1 search的升级版
 export function search1 (a,b){
   const VALID_VALUE = new Set(b)
   for(let o in a)
@@ -36,9 +36,10 @@ export function ArrDelete(a,b){
    return a.splice(a.findIndex(item => item == b), 1)
 }
 /**
+ * @Author: Pi Patle
  * @description: Collocate 并归排序
- * @param {type} 
- * @return: 
+ * @param {*} arr 数组
+ * @return {*}
  */
 export function Collocate(arr) {
   var len = arr.length;

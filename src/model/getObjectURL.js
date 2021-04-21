@@ -4,11 +4,11 @@
  * @Github: https://github.com/SenLiangpi
  * @Website: https://senliangpi.github.io/blog/#/
  * @Date: 2019-12-04 09:19:13
- * @LastEditors: PiPi
- * @LastEditTime: 2020-08-05 10:31:53
+ * @LastEditors: Pi Patle
+ * @LastEditTime: 2021-04-21 16:16:26
  */
 
-// 选中文件 生成链接地址
+// 生成 选中文件 的访问链接地址
 export function getObjectURL (file) {
   let url = null
   if (window.createObjcectURL != undefined) {
