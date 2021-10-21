@@ -5,7 +5,7 @@
  * @Website: https://senliangpi.github.io/blog/#/
  * @Date: 2019-06-25 14:10:38
  * @LastEditors: Pi Patle
- * @LastEditTime: 2021-04-21 15:51:03
+ * @LastEditTime: 2021-07-05 10:14:22
  */
 export {domArea} from './domArea/domArea';
 export { commaSeparated } from './model/number';
@@ -23,4 +23,4 @@ export { pictureCompression } from './model/pictureCompression.js';
 export { queue,queue_basis } from './model/queue.js';
 export { ceshi1 } from './model/animation.js';
 export { download } from './model/download.js';
-export { phone_number,text_length,CHN_number_plate,text_number } from './model/regular_expressions.js'
+export { phone_number,text_length,CHN_number_plate,text_number, } from './model/regular_expressions.js'

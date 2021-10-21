@@ -5,7 +5,7 @@
  * @Website: https://senliangpi.github.io/blog/#/
  * @Date: 2020-05-14 16:12:46
  * @LastEditors: Pi Patle
- * @LastEditTime: 2021-04-21 16:15:22
+ * @LastEditTime: 2021-08-04 09:49:55
  */
 /**
  * @description: search1 数组a 中所有的数据是否在数组 b中都存在
@@ -70,7 +70,7 @@ function merge(left, right) {
 }
 /**
  * @description: sort 插入排序
- * @param {type} 
+ * @param {arry: array} 
  * @return: 
  */
 export function sort(arry) {
@@ -83,6 +83,26 @@ export function sort(arry) {
           i --;
       }
       arry[i + 1] = key;
+  }
+  //输出结果
+  return arry;
+}
+/**
+ * @description: sort 插入排序 JSON 版本
+ * @param {arry: arry, jsonKey: json中需要排序字段的key String, order: Boolean true从大到小 false从小到大} 
+ * @return: 
+ */
+export function sortJson(arry,jsonKey,order) {
+  let key, i;
+  for (let j = 1; j < arry.length; j++) {
+    key = arry[j];
+    i = j - 1;
+    
+    while (i > -1 && (order ? (arry[i][jsonKey] > key[jsonKey]) : (arry[i][jsonKey] < key[jsonKey]))) {
+      arry[i + 1] = arry[i];
+      i --;
+    }
+    arry[i + 1] = key;
   }
   //输出结果
   return arry;

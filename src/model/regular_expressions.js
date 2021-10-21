@@ -5,7 +5,7 @@
  * @Website: https://senliangpi.github.io/blog/#/
  * @Date: 2021-01-11 14:34:03
  * @LastEditors: Pi Patle
- * @LastEditTime: 2021-04-21 15:48:15
+ * @LastEditTime: 2021-07-05 14:19:46
  */
 
   /**
@@ -14,7 +14,7 @@
    * @param {*} value text
    * @return {*} Boolean
    */
-  const phone_number = (value) => {
+   export const phone_number = (value) => {
     if(value) return (/^[1][0-9]{10}$/).test(value);
     return false
   }
@@ -25,7 +25,7 @@
    * @param {*} length 长度
    * @return {*} Boolean
    */
-  const text_length = (value,length) => {
+   export const text_length = (value,length) => {
     if (value && length) return value.length < length;
     return false
   }
@@ -35,7 +35,7 @@
    * @param {*} value text
    * @return {*} Boolean
    */
-  export function CHN_number_plate(value){
+  export const CHN_number_plate = (value)=>{
     if (value) return (/^(([京津沪渝冀豫云辽黑湘皖鲁新苏浙赣鄂桂甘晋蒙陕吉闽贵粤青藏川宁琼使领][A-Z](([0-9]{5}[DF])|([ADFG]([A-HJ-NP-Z0-9])[0-9]{4})))|([京津沪渝冀豫云辽黑湘皖鲁新苏浙赣鄂桂甘晋蒙陕吉闽贵粤青藏川宁琼使领][A-Z][A-HJ-NP-Z0-9]{4}[A-HJ-NP-Z0-9挂学警港澳使领]))$/).test(value);
     return false
   }
@@ -45,7 +45,11 @@
    * @param {*} value
    * @return {*}
    */
-  const text_number = (value)=>{
+   export const text_number = (value)=>{
     if(value) return (/\D/g).test(value);
     return false
+  }
+
+  export const vin_check = (value)=>{
+    
   }
