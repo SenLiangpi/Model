@@ -5,10 +5,10 @@
  * @Website: https://senliangpi.github.io/blog/#/
  * @Date: 2019-06-25 14:10:38
  * @LastEditors: Pi Patle
- * @LastEditTime: 2021-07-05 10:14:22
+ * @LastEditTime: 2022-01-13 11:00:01
  */
 export {domArea} from './domArea/domArea';
-export { commaSeparated } from './model/number';
+export { commaSeparated,formatFunK,percentage } from './model/number';
 export { search,search1,ArrDelete,Collocate,sort,arrayMonitor } from './model/array.js';
 export { getBlobBydataURI } from './model/blobBase64.js';
 export { dateWeek,dateMonth } from './model/date.js';
@@ -24,3 +24,4 @@ export { queue,queue_basis } from './model/queue.js';
 export { ceshi1 } from './model/animation.js';
 export { download } from './model/download.js';
 export { phone_number,text_length,CHN_number_plate,text_number, } from './model/regular_expressions.js'
+export { null_change } from './model/string.js'

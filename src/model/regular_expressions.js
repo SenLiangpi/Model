@@ -5,7 +5,7 @@
  * @Website: https://senliangpi.github.io/blog/#/
  * @Date: 2021-01-11 14:34:03
  * @LastEditors: Pi Patle
- * @LastEditTime: 2021-07-05 14:19:46
+ * @LastEditTime: 2022-01-13 15:20:05
  */
 
   /**
@@ -45,8 +45,18 @@
    * @param {*} value
    * @return {*}
    */
-   export const text_number = (value)=>{
+  export const text_number = (value)=>{
     if(value) return (/\D/g).test(value);
+    return false
+  }
+  /**
+   * @Author: Pi Patle
+   * @description: validate_blank 空格校验不能包含空格
+   * @param {String} value
+   * @return {Boolean} true || false
+   */  
+  export const validate_blank = (value)=>{
+    if(value) return (value.indexOf(' ') !== -1)
     return false
   }
 

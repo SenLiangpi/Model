@@ -5,7 +5,7 @@
  * @Website: https://senliangpi.github.io/blog/#/
  * @Date: 2019-06-25 14:23:46
  * @LastEditors: Pi Patle
- * @LastEditTime: 2021-04-21 15:52:26
+ * @LastEditTime: 2022-01-13 11:00:52
 -->
 # All model
 JavaScript 逻辑代码封装库
@@ -75,17 +75,25 @@ queue_basis
 动画 0.0.10
 
 phone_number
-中国大陆手机号正则 
+中国大陆手机号正则 0.0.12
 
 text_length
-文本长度是否符合
+文本长度是否符合 0.0.12
 
 CHN_number_plate
-中国大陆机动车车牌正则校验
+中国大陆机动车车牌正则校验 0.0.12
 
 text_number
-文本是否都是数字正则校验
+文本是否都是数字正则校验 0.0.12
 
+formatFunK
+数值单位转换 K千 M百万 0.0.13
+
+percentage
+转百分比 0.0.13
+
+null_change
+null || '' 转换为 -- 0.0.13
 
 ## API
 暂时没时间写(ง •_•)ง 如有想要使用但不懂如何用的 可以联系我
