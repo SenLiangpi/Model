@@ -5,7 +5,7 @@
  * @Website: https://senliangpi.github.io/blog/#/
  * @Date: 2019-06-25 14:23:46
  * @LastEditors: Pi Patle
- * @LastEditTime: 2022-01-13 11:00:52
+ * @LastEditTime: 2023-01-10 17:03:27
 -->
 # All model
 JavaScript 逻辑代码封装库
@@ -13,9 +13,6 @@ JavaScript 逻辑代码封装库
 ## model列表
 domArea
 当前dom 是否在可视区域 0.0.4
-
-commaSeparated
-数字千分位‘ , ’间隔 0.0.4
 
 search
 数组a 中所有的数据是否在数组 b中都存在 0.0.4
@@ -31,6 +28,9 @@ Collocate
 
 sort
 插入排序 0.0.4
+
+arrayMonitor
+数组监听 0.0.14
 
 getBlobBydataURI
 将数据转化为文件 0.0.4
@@ -62,17 +62,17 @@ swipingBottom
 pictureCompression
 图片压缩 0.0.4
 
-recording //逻辑优化中暂不对外开放
-录音 0.0.5
-
 queue
 队列 0.0.8
 
 queue_basis
 基本队列-应用层面 0.0.8
 
-queue_basis
-动画 0.0.10
+ceshi1
+圆形展开动画 0.0.14
+
+download
+文件下载 -- 0.0.13
 
 phone_number
 中国大陆手机号正则 0.0.12
@@ -86,14 +86,31 @@ CHN_number_plate
 text_number
 文本是否都是数字正则校验 0.0.12
 
+validate_blank
+空格校验不能包含空格 0.0.14
+
+vin_check
+vin码正则校验 0.0.14
+
+null_change
+null || '' 转换为 -- 0.0.13
+
+commaSeparated
+数字千分位‘ , ’间隔 0.0.4
+
 formatFunK
 数值单位转换 K千 M百万 0.0.13
 
 percentage
 转百分比 0.0.13
 
-null_change
-null || '' 转换为 -- 0.0.13
+percentage2
+转百分比 不加%号 0.0.14
+
+queue_basis
+圆形扩散动画 0.0.10
+
+recording
+录音 0.0.14
 
 ## API
-暂时没时间写(ง •_•)ง 如有想要使用但不懂如何用的 可以联系我
