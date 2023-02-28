@@ -5,17 +5,18 @@
  * @Website: https://senliangpi.github.io/blog/#/
  * @Date: 2019-06-25 14:10:38
  * @LastEditors: Pi Patle
- * @LastEditTime: 2023-01-10 17:03:44
+ * @LastEditTime: 2023-02-28 14:53:24
  */
 export {domArea} from './domArea/domArea';
-// export { commaSeparated,formatFunK,percentage } from './model/number';
 export {
   search,
   search1,
   ArrDelete,
   Collocate,
   sort,
+  sortJson,
   arrayMonitor,
+  arrayFlatten,
 } from './model/array.js';
 export { getBlobBydataURI } from './model/blobBase64.js';
 export { dateWeek, dateMonth } from './model/date.js';

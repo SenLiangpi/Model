@@ -1,4 +1,13 @@
 /*
+ * @Author: Pi Patle
+ * @Email: pisenliang@gmail.com
+ * @Github: https://github.com/SenLiangpi
+ * @Website: https://senliangpi.github.io/blog/#/
+ * @Date: 2021-10-21 14:27:36
+ * @LastEditors: Pi Patle
+ * @LastEditTime: 2023-02-28 14:54:09
+ */
+/*
  * @Author: PiPi
  * @Email: pisenliang@gmail.com
  * @Github: https://github.com/SenLiangpi
@@ -125,6 +134,19 @@ export function arrayMonitor(callback){
     arrExtend[method] = newMethod
   })
   return arrExtend
+}
+/**
+ * @Author: Pi Patle
+ * @description: arrayFlatten 层级数组 children 展开为一层
+ * @param {Array} arr
+ * @return {Array}
+ */
+export function arrayFlatten (arr) {
+  return arr.reduce((result, item) => {
+    const children = item.children || [];
+    delete item.children;
+    return result.concat(item, flatten(children));
+  }, []);
 }
 
 function arrayIndex(arr,value){

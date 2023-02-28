@@ -5,7 +5,7 @@
  * @Website: https://senliangpi.github.io/blog/#/
  * @Date: 2019-06-25 14:23:46
  * @LastEditors: Pi Patle
- * @LastEditTime: 2023-01-10 17:03:27
+ * @LastEditTime: 2023-02-28 14:55:57
 -->
 # All model
 JavaScript 逻辑代码封装库
@@ -31,6 +31,9 @@ sort
 
 arrayMonitor
 数组监听 0.0.14
+
+arrayFlatten
+层级数组 children 展开为一层 0.0.14
 
 getBlobBydataURI
 将数据转化为文件 0.0.4
