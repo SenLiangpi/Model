@@ -5,7 +5,7 @@
  * @Website: https://senliangpi.github.io/blog/#/
  * @Date: 2019-06-25 14:23:46
  * @LastEditors: Pi Patle
- * @LastEditTime: 2023-02-28 14:55:57
+ * @LastEditTime: 2023-02-28 14:59:46
 -->
 # All model
 JavaScript 逻辑代码封装库
@@ -109,9 +109,6 @@ percentage
 
 percentage2
 转百分比 不加%号 0.0.14
-
-queue_basis
-圆形扩散动画 0.0.10
 
 recording
 录音 0.0.14
